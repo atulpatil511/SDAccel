@@ -39,9 +39,9 @@ BINARY_CONTAINERS += $(XCLBIN)/krnl_affine.$(TARGET).$(DSA).xclbin
 BINARY_CONTAINER_krnl_affine_OBJS += $(XCLBIN)/affine_kernel.$(TARGET).$(DSA).xo
 
 #Include Libraries
-include $(ABS_COMMON_REPO)/libs/opencl/opencl.mk
-include $(ABS_COMMON_REPO)/libs/xcl2/xcl2.mk
-include $(ABS_COMMON_REPO)/libs/bitmap/bitmap.mk
+include $(ABS_COMMON_REPO)/Desktop/SDAccel/libs/opencl/opencl.mk
+include $(ABS_COMMON_REPO)/Desktop/SDAccel/libs/xcl2/xcl2.mk
+include $(ABS_COMMON_REPO)/Desktop/SDAccel/libs/bitmap/bitmap.mk
 CXXFLAGS += $(xcl2_CXXFLAGS) $(bitmap_CXXFLAGS)
 LDFLAGS += $(xcl2_LDFLAGS) $(bitmap_LDFLAGS)
 HOST_SRCS += $(xcl2_SRCS) $(bitmap_SRCS)
